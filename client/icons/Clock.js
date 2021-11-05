@@ -1,4 +1,5 @@
-import createSvgIcon from '@material-ui/core/utils/createSvgIcon';
+import React from 'react';
+import { createSvgIcon } from "@mui/material";
 
 const Clock = createSvgIcon(
   <svg

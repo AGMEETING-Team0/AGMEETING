@@ -10,7 +10,9 @@ import DashboardLayout from './Component/DashBoard/Layout';
 import About from './About';
 import NoMatch from './NoMatch';
 import Testpg from './anothertestpg';
-
+import Session from './Component/Session';
+import LoadingScreen from './Component/LoadingScreen';
+import Overview from './Component/DashBoard/Overview';
 
 // // Declarative routing model
 // return (
@@ -23,35 +25,55 @@ import Testpg from './anothertestpg';
 
 //Programmatic routing model
 const routes = [
-    // { path: '/', element: <Land /> },
-    // {
-    //     path: 'about',
-    //     element: <About />,
-    //     children: [
-    //         {
-    //             path: '/about', element: <NoMatch />
-    //         }
-    //     ]
-    // },
+    { path: '/', element: <Land /> },
     {
-        path: '/',
+        path: 'dashboard',
         element: <DashboardLayout />,
         children: [
             { index: true, element: <Land /> },
             {
-                path: '/about',
-                element: <About />,
+                path: 'overview',
+                element: <Overview />,
             },
             {
-                path: '/test',
-                element: <Testpg />,
-                // children: [
-                //     { index: true, element: <Testpg/> },
-                // ]
+                path: 'session',
+                element: <Session />
+            },
+            {
+                path: 'agenda',
+                element: <Testpg />
+            },
+            {
+                path: 'vault',
+                element: <Testpg />
+            },
+            {
+                path: 'interactions',
+                element: <Testpg />
             },
             { path: "*", element: <NoMatch /> }
         ]
     },
+
+    // {
+    //     path: '/dashboard/session',
+    //     element: <Session />,
+    //     children: [
+    //         { index: true, element: <Land /> },
+    //         {
+    //             path: '/about',
+    //             element: <About />,
+    //         },
+    //         // {
+    //         //     path: '/test',
+    //         //     element: <Testpg />,
+    //         //     // children: [
+    //         //     //     { index: true, element: <Testpg/> },
+    //         //     // ]
+    //         // },
+    //         { path: "*", element: <NoMatch /> }
+    //     ]
+    // },
 
     // },
     // // {

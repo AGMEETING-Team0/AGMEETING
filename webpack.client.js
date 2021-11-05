@@ -11,7 +11,6 @@ const config = {
     mode: "development",
     devtool: 'eval-source-map',
     entry: './client/main.js',
-
     output: {
         filename: "bundle.js",
         path: path.resolve(__dirname, 'dist'),

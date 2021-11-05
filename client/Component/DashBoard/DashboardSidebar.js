@@ -12,8 +12,10 @@ import BriefcaseIcon from '../../icons/Briefcase';
 import CalendarIcon from '../../icons/Calendar';
 import ChartPieIcon from '../../icons/ChartPie';
 import ChartSquareBarIcon from '../../icons/ChartSquareBar';
+import Lock from '../../icons/Lock';
 import ChatAltIcon from '../../icons/ChatAlt';
 import ClipboardListIcon from '../../icons/ClipboardList';
+import Clock from '../../icons/Clock';
 import FolderOpenIcon from '../../icons/FolderOpen';
 import MailIcon from '../../icons/Mail';
 import ShareIcon from '../../icons/Share';
@@ -24,6 +26,7 @@ import UsersIcon from '../../icons/Users';
 import Logo from '../../Logo';
 import NavSection from '../../NavSection';
 import Scrollbar from '../../Scrollbar';
+import Users from '../../icons/Users';
 // import { Receipt } from '@material-ui/icons';
 
 const sections = [
@@ -32,166 +35,171 @@ const sections = [
     items: [
       {
         title: 'Overview',
-        path: '/dashboard',
+        path: '/dashboard/overview',
         icon: <ChartSquareBarIcon fontSize="small" />
       },
       {
-        title: 'Analytics',
-        path: '/dashboard/analytics',
-        icon: <ChartPieIcon fontSize="small" />
+        title: 'Session',
+        path: '/dashboard/session',
+        icon: <Clock fontSize="small"/>
       },
       {
-        title: 'Finance',
-        path: '/dashboard/finance',
-        icon: <ShoppingBagIcon fontSize="small" />
-      },
-      {
-        title: 'Account',
-        path: '/dashboard/account',
-        icon: <UserIcon fontSize="small" />
-      }
-    ]
-  },
-  {
-    title: 'Management',
-    items: [
-      {
-        title: 'Customers',
-        path: '/dashboard/customers',
-        icon: <UsersIcon fontSize="small" />,
-        children: [
-          {
-            title: 'List',
-            path: '/dashboard/customers'
-          },
-          {
-            title: 'Details',
-            path: '/dashboard/customers/1'
-          },
-          {
-            title: 'Edit',
-            path: '/dashboard/customers/1/edit'
-          }
-        ]
-      },
-      {
-        title: 'Products',
-        path: '/dashboard/products',
-        icon: <ShoppingCartIcon fontSize="small" />,
-        children: [
-          {
-            title: 'List',
-            path: '/dashboard/products'
-          },
-          {
-            title: 'Create',
-            path: '/dashboard/products/new'
-          }
-        ]
-      },
-      {
-        title: 'Orders',
-        icon: <FolderOpenIcon fontSize="small" />,
-        path: '/dashboard/orders',
-        children: [
-          {
-            title: 'List',
-            path: '/dashboard/orders'
-          },
-          {
-            title: 'Details',
-            path: '/dashboard/orders/1'
-          }
-        ]
-      },
-      {
-        title: 'Invoices',
-        path: '/dashboard/invoices',
-        icon: <FolderOpenIcon fontSize="small" />,
-        children: [
-          {
-            title: 'List',
-            path: '/dashboard/invoices'
-          },
-          {
-            title: 'Details',
-            path: '/dashboard/invoices/1'
-          }
-        ]
-      }
-    ]
-  },
-  {
-    title: 'Platforms',
-    items: [
-      {
-        title: 'Projects',
-        path: '/dashboard/projects',
-        icon: <BriefcaseIcon fontSize="small" />,
-        children: [
-          {
-            title: 'Browse',
-            path: '/dashboard/projects/browse'
-          },
-          {
-            title: 'Details',
-            path: '/dashboard/projects/1'
-          },
-          {
-            title: 'Create',
-            path: '/dashboard/projects/new'
-          }
-        ]
-      },
-      {
-        title: 'Social',
-        path: '/dashboard/social',
-        icon: <ShareIcon fontSize="small" />,
-        children: [
-          {
-            title: 'Profile',
-            path: '/dashboard/social/profile'
-          },
-          {
-            title: 'Feed',
-            path: '/dashboard/social/feed'
-          }
-        ]
-      }
-    ]
-  },
-  {
-    title: 'Apps',
-    items: [
-      {
-        title: 'Kanban',
-        path: '/dashboard/kanban',
+        title: 'Agenda',
+        path: '/dashboard/agenda',
         icon: <ClipboardListIcon fontSize="small" />
       },
       {
-        title: 'Mail',
-        path: '/dashboard/mail',
-        icon: <MailIcon fontSize="small" />
+        title: 'Vault',
+        path: '/dashboard/vault',
+        icon: <Lock fontSize="small" />
       },
       {
-        title: 'Chat',
-        path: '/dashboard/chat',
-        icon: <ChatAltIcon fontSize="small" />
-      },
-      {
-        title: 'Calendar',
-        path: '/dashboard/calendar',
-        icon: <CalendarIcon fontSize="small" />
+        title: 'Interactions',
+        path: '/dashboard/interactions',
+        icon: <Users fontSize="small" />
       }
     ]
-  }
+  },
+  // {
+  //   title: 'Management',
+  //   items: [
+  //     {
+  //       title: 'Customers',
+  //       path: '/dashboard/customers',
+  //       icon: <UsersIcon fontSize="small" />,
+  //       children: [
+  //         {
+  //           title: 'List',
+  //           path: '/dashboard/customers'
+  //         },
+  //         {
+  //           title: 'Details',
+  //           path: '/dashboard/customers/1'
+  //         },
+  //         {
+  //           title: 'Edit',
+  //           path: '/dashboard/customers/1/edit'
+  //         }
+  //       ]
+  //     },
+  //     {
+  //       title: 'Products',
+  //       path: '/dashboard/products',
+  //       icon: <ShoppingCartIcon fontSize="small" />,
+  //       children: [
+  //         {
+  //           title: 'List',
+  //           path: '/dashboard/products'
+  //         },
+  //         {
+  //           title: 'Create',
+  //           path: '/dashboard/products/new'
+  //         }
+  //       ]
+  //     },
+  //     {
+  //       title: 'Orders',
+  //       icon: <FolderOpenIcon fontSize="small" />,
+  //       path: '/dashboard/orders',
+  //       children: [
+  //         {
+  //           title: 'List',
+  //           path: '/dashboard/orders'
+  //         },
+  //         {
+  //           title: 'Details',
+  //           path: '/dashboard/orders/1'
+  //         }
+  //       ]
+  //     },
+  //     {
+  //       title: 'Invoices',
+  //       path: '/dashboard/invoices',
+  //       icon: <FolderOpenIcon fontSize="small" />,
+  //       children: [
+  //         {
+  //           title: 'List',
+  //           path: '/dashboard/invoices'
+  //         },
+  //         {
+  //           title: 'Details',
+  //           path: '/dashboard/invoices/1'
+  //         }
+  //       ]
+  //     }
+  //   ]
+  // },
+  // {
+  //   title: 'Platforms',
+  //   items: [
+  //     {
+  //       title: 'Projects',
+  //       path: '/dashboard/projects',
+  //       icon: <BriefcaseIcon fontSize="small" />,
+  //       children: [
+  //         {
+  //           title: 'Browse',
+  //           path: '/dashboard/projects/browse'
+  //         },
+  //         {
+  //           title: 'Details',
+  //           path: '/dashboard/projects/1'
+  //         },
+  //         {
+  //           title: 'Create',
+  //           path: '/dashboard/projects/new'
+  //         }
+  //       ]
+  //     },
+  //     {
+  //       title: 'Social',
+  //       path: '/dashboard/social',
+  //       icon: <ShareIcon fontSize="small" />,
+  //       children: [
+  //         {
+  //           title: 'Profile',
+  //           path: '/dashboard/social/profile'
+  //         },
+  //         {
+  //           title: 'Feed',
+  //           path: '/dashboard/social/feed'
+  //         }
+  //       ]
+  //     }
+  //   ]
+  // },
+  // {
+  //   title: 'Apps',
+  //   items: [
+  //     {
+  //       title: 'Kanban',
+  //       path: '/dashboard/kanban',
+  //       icon: <ClipboardListIcon fontSize="small" />
+  //     },
+  //     {
+  //       title: 'Mail',
+  //       path: '/dashboard/mail',
+  //       icon: <MailIcon fontSize="small" />
+  //     },
+  //     {
+  //       title: 'Chat',
+  //       path: '/dashboard/chat',
+  //       icon: <ChatAltIcon fontSize="small" />
+  //     },
+  //     {
+  //       title: 'Calendar',
+  //       path: '/dashboard/calendar',
+  //       icon: <CalendarIcon fontSize="small" />
+  //     }
+  //   ]
+  // }
 ];
 
 const DashboardSidebar = (props) => {
   const { onMobileClose, openMobile } = props;
   const location = useLocation();
   // const { user } = useAuth();
-  const lgUp = useMediaQuery((theme) => theme.breakpoints.up('lg'));
+  const lgUp = useMediaQuery('(min-width:980px)');
 
   useEffect(() => {
     if (openMobile && onMobileClose) {
@@ -247,7 +255,7 @@ const DashboardSidebar = (props) => {
                   width: 48
                 }}
               /> */}
-              Avater
+              Avatar
             </RouterLink>
             <Box sx={{ ml: 2 }}>
               <Typography
