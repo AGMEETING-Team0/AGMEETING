@@ -11,9 +11,6 @@ function Land() {
             <Typography variant="h2">
                 AGMEETING
             </Typography>
-            {/* <Link to="/dashboard">
-                dashboard
-            </Link> */}
             <div>
                 <Card style={{display: 'inline-block'}}>
                     <CardContent>

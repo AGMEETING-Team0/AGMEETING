@@ -7,29 +7,11 @@ import App from "./App";
 
 import Land from './Land';
 import DashboardLayout from './Component/DashBoard/Layout';
-import About from './About';
 import NoMatch from './NoMatch';
-import Testpg from './anothertestpg';
-import Agenda from "./Component/Agenda";
-import Settings from "./Component/GeneralSettings";
 import Session from './Component/Session';
-import LoadingScreen from './Component/LoadingScreen';
-import Overview from './Component/DashBoard/Overview';
 import Interactions from './Component/DashBoard/Interactions';
-
-import Land from "./Land";
-import DashboardLayout from "./Component/DashBoard/Layout";
-import About from "./About";
-import NoMatch from "./NoMatch";
-import Testpg from "./anothertestpg";
-import Session from "./Component/Session";
-// import LoadingScreen from "./Component/LoadingScreen";
-// import Overview from "./Component/DashBoard/Overview";
-// import Agenda from "./Component/Agenda";
 import Table1 from "./Component/Table1";
-import Interactions from "./Component/DashBoard/Interactions";
 import Vault from "./Component/Vault";
-import ContentMessage from "./Component/ContentMessage"
 
 // // Declarative routing model
 // return (
